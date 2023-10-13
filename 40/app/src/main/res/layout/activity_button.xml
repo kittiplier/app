@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ws1"
+    tools:context=".ButtonActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="HI!  "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:id="@+id/user_details"
+            android:text="  "
+            android:textSize="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+
+            android:gravity="center"
+            android:id="@+id/outbtn"
+            android:text="登出"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/btn_scan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/qr2"
+            android:clickable="true" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:text="查看輔大室內空氣品質"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:id="@+id/airboxbtn"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:text="查看輔大附近ubike"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:id="@+id/ubikebtn"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:text="查看個人超級課表"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:id="@+id/coursebtn"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
